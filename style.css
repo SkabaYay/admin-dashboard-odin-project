@@ -1,0 +1,17 @@
+:root{
+    --primary-color: #1992D4;
+    --project-color: #1992D4;
+    --sidebar-color: #F0B429;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+}
+
+.container .dashboard{
+    background-color: var(--primary-color);
+    display: grid;
+    justify-content: center;
+}
