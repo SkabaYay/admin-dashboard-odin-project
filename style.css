@@ -1,7 +1,7 @@
 :root{
     --primary-color: #1992D4;
-    --project-color: #1992D4;
     --sidebar-color: #F0B429;
+    --background-color: #E2E8F0;
 }
 
 *{
@@ -49,4 +49,83 @@ body{
 .container .dashboard .cell:nth-child(1) {
     font-size: 1.5rem;
     font-weight: bold; 
+}
+
+.container .header {
+    padding: 0.5rem 3rem;
+    grid-row: 1 / 1;
+}
+
+.container .header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header .top .left {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.container .header .top .left .search-text {
+    display: inline-block;
+    height: 30px;
+    width: 800px;
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+
+.container .header .top .right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .header .top .right img {
+    border-radius: 50%;
+}
+
+.container .header .bottom {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .header .bottom .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.container .header .bottom .left img {
+    border-radius: 50%;
+}
+
+.container .header .bottom .left .text p:nth-child(2) {
+    font-size: 1.4rem;
+}
+
+.container .header .bottom .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .header .bottom .right .cell {
+    height: 40px;
+    width: 100px;
+    background-color: var(--primary-color);
+    color:white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .project {
+    background-color: var(--background-color);
+    grid-row: 2 / 3;
 }
